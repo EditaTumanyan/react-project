@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Portfolio.module.css";
-import commonStyles from "../../../styles/CommonStyles.module.css";
+import commonStyles from "../../styles/CommonStyles.module.css";
 
 export default function Portfolio({ openAside }) {
 

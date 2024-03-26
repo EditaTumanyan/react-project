@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import commonStyles from "../../../styles/CommonStyles.module.css";
+import commonStyles from "../../styles/CommonStyles.module.css";
 export default function Footer() {
   return (
     <div className={styles.footerContainer}>

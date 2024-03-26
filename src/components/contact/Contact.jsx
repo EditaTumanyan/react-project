@@ -1,6 +1,6 @@
 import styles from "./Contact.module.css";
-import commonStyles from "../../../styles/CommonStyles.module.css";
-import Button from "../../button/Button";
+import commonStyles from "../../styles/CommonStyles.module.css";
+import Button from "../button/Button";
 
 export default function Contact({ openAside }) {
   return (

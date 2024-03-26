@@ -1,13 +1,13 @@
-import React from "react";
+import React, {useCallback} from "react";
 import styles from "./Intro.module.css";
 import { FaBars } from "react-icons/fa";
-import commonStyles from "../../../styles/CommonStyles.module.css";
-import Button from "../../button/Button";
+import commonStyles from "../../styles/CommonStyles.module.css";
+import Button from "../button/Button";
 export default function Intro({ toggleAside, openAside }) {
-  const handleClick = () => {
-    console.log("clicked");
+  const handleClick = useCallback(() => {
     toggleAside();
-  };
+  }, [toggleAside]);
+
   return (
     <div
       className={`${styles.introContainer} ${
