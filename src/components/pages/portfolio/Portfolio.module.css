@@ -1,0 +1,44 @@
+.shiftRight {
+  transform: translateX(320px);
+}
+
+.imageContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.imageWrapper {
+  text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+  height: 50px;
+  width: auto;
+  font-size: 21px;
+  line-height: 50px;
+  color: #888;
+}
+
+@media screen and (max-width: 820px) {
+  .imageContainer {
+    grid-template-columns: 1fr;
+  }
+  .portfolioContainer {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .shiftRight {
+    transform: translateX(0px);
+  }
+}

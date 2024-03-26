@@ -1,0 +1,16 @@
+.image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.shiftRight {
+  transform: translateX(320px);
+}
+
+@media screen and (min-width: 1040px) {
+  .shiftRight {
+    transform: translateX(0px);
+  }
+}

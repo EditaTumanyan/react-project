@@ -1,0 +1,83 @@
+.introContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto 320px;
+  padding-top: 30px;
+  transition: margin-left 0.8s;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.shiftRight {
+  transform: translateX(320px);
+}
+
+.bars {
+  color: rgba(149, 147, 147, 0.75);
+  font-size: 25px;
+  cursor: pointer;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+
+.banner {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  padding-bottom: 100px;
+}
+
+.textOverlay h2,
+.textOverlay p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.textOverlay h2 {
+  font-size: 2.3em;
+  line-height: 2em;
+}
+
+.textOverlay p {
+  font-size: 1.25em;
+  line-height: 2em;
+}
+
+@media screen and (max-width: 1040px) {
+  .bars {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .bars {
+    display: none;
+  }
+  .introContainer {
+    grid-template-columns: auto 320px;
+  }
+  .shiftRight {
+    transform: translateX(0);
+  }
+}

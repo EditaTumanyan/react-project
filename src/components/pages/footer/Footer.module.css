@@ -1,0 +1,15 @@
+.footerContainer {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerContainer a {
+  white-space: nowrap;
+  color: #888;
+  border-bottom: 1.5px dotted #888;
+}
+.footerContainer p {
+  color: #888;
+  font-size: 1.2em;
+}
